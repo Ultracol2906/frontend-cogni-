@@ -1,0 +1,474 @@
+<html>
+
+<head>
+  <title>
+    Contact us
+  </title>
+  <script>
+    const getBtcData = async () => {
+      fetch('https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD')
+        .then(response => response.json())
+        .then(data => {
+          console.log(data);
+          document.getElementById("info").innerHTML = '<b> Bitcoin &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;' + data.USD + ' USD</b>'
+        });
+    }
+    getBtcData();
+    tcount = setInterval(function () {
+      tcount++
+      if (tcount == 10) { getBtcData(); tcount = 0 }
+    }, 1000);
+
+    const getBtcData1 = async () => {
+      fetch('https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD')
+        .then(response => response.json())
+        .then(data => {
+          console.log(data);
+          document.getElementById("infoo").innerHTML = '<b> Bitcoin &emsp;' + data.USD + ' USD</b>'
+        });
+    }
+    getBtcData1();
+    tcount = setInterval(function () {
+      tcount++
+      if (tcount == 10) { getBtcData(); tcount = 0 }
+    }, 1000);
+    const getEthData = async () => {
+      fetch('https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD')
+        .then(response => response.json())
+        .then(data1 => {
+          console.log(data1);
+          document.getElementById("info1").innerHTML = '<b> Etherium &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;' + data1.USD + ' USD</b>'
+        });
+    }
+    getEthData();
+    tcount1 = setInterval(function () {
+      tcount1++
+      if (tcount1 == 10) { getEthData(); tcount1 = 0 }
+    }, 1000); 1
+
+    const getEthData1 = async () => {
+      fetch('https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD')
+        .then(response => response.json())
+        .then(data1 => {
+          console.log(data1);
+          document.getElementById("infoo1").innerHTML = '<b> Etherium &emsp;' + data1.USD + ' USD</b>'
+        });
+    }
+    getEthData1();
+    tcount1 = setInterval(function () {
+      tcount1++
+      if (tcount1 == 10) { getEthData1(); tcount1 = 0 }
+    }, 1000); 1
+    const getBnbData = async () => {
+      fetch('https://min-api.cryptocompare.com/data/price?fsym=BNB&tsyms=USD')
+        .then(response => response.json())
+        .then(data1 => {
+          console.log(data1);
+          document.getElementById("info2").innerHTML = '<b> Binance &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;' + data1.USD + ' USD</b>'
+        });
+    }
+    getBnbData();
+    tcount1 = setInterval(function () {
+      tcount1++
+      if (tcount1 == 10) { getBnbData(); tcount1 = 0 }
+    }, 1000);
+    const getBnbData1 = async () => {
+      fetch('https://min-api.cryptocompare.com/data/price?fsym=BNB&tsyms=USD')
+        .then(response => response.json())
+        .then(data1 => {
+          console.log(data1);
+          document.getElementById("infoo2").innerHTML = '<b> Binance &emsp;' + data1.USD + ' USD</b>'
+        });
+    }
+    getBnbData1();
+    tcount1 = setInterval(function () {
+      tcount1++
+      if (tcount1 == 10) { getBnbData1(); tcount1 = 0 }
+    }, 1000);
+  </script>
+  <style>
+    .ul1 {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      height: 244px;
+      background-image: linear-gradient(black, grey);
+    }
+
+    li a {
+      display: block;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    li a.active {
+      background-image: linear-gradient(to right, blue, purple);
+    }
+
+    li a:hover:not(.active) {
+      background-color: #555;
+      color: #06c0f4;
+    }
+
+    .grad {
+      background-image: linear-gradient(indigo, indigo);
+    }
+
+    .active {
+      background-image: linear-gradient(lightblue, yellow, blue, pink);
+    }
+
+    .green {
+      color: #329239;
+      size: 40px;
+      font-family: 'Courier New';
+      text-decoration: solid;
+    }
+
+    .box3 {
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      float: right;
+      width: 400px;
+      height: 344px;
+      border-radius: 25px;
+      overflow: auto;
+      color: white;
+      float: right;
+    }
+
+    .box4 {
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      float: right;
+      width: 400px;
+      height: 50px;
+      border-radius: 25px;
+      overflow: auto;
+      color: white;
+    }
+
+    .box2 {
+      background-color: rgba(0, 0, 0, .5);
+      color: #fff;
+      float: right;
+      border: 1 px solid black;
+      width: 200px;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    .container1 {
+      display: flex;
+      align-items: center;
+    }
+
+    .img {
+      max-width: 40px;
+      max-height: 40px;
+    }
+
+    .img1 {
+      max-width: 40px;
+      max-height: 40px;
+    }
+
+    .text {
+      font-size: 15px;
+      padding-left: 20px;
+    }
+
+    #outer-grid {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+    }
+
+    #outer-grid>div {
+      background-color: white;
+      color: white;
+      font-size: 4vw;
+      padding: 10px;
+    }
+
+    #inner-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5px;
+    }
+
+    #inner-grid>div {
+      background: salmon;
+      padding: 10px;
+    }
+
+    .search input[type=text] {
+      width: 300px;
+      height: 25px;
+      border-radius: 25px;
+      border: none;
+
+    }
+
+    .search {
+      float: right;
+      margin: 7px;
+
+    }
+
+    .search button {
+      background-color: #0074D9;
+      color: #f2f2f2;
+      float: right;
+      padding: 5px 10px;
+      margin-right: 16px;
+      font-size: 12px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .marquee-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      border-top: 2px solid white;
+      border-bottom: 2px solid white;
+    }
+
+    .row {
+      display: flex;
+      width: 100%;
+    }
+
+    .row div {
+      width: 50%;
+    }
+
+    .noMargin {
+      margin: 0px;
+    }
+
+    .one {
+      background-color: red;
+    }
+
+    .two {
+      background-color: yellow;
+    }
+
+    .three {
+      background-color: green;
+    }
+
+    .four {
+      background-color: blue;
+    }
+
+    .flexing {
+      padding-left: 200px;
+      padding-right: 200px;
+    }
+
+    .box2 {
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      float: right;
+      width: 400px;
+      height: 344px;
+      overflow: auto;
+      color: white;
+      float: right;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+
+    .member {
+      width: 300px;
+      background-color: #333;
+      border-radius: 5px;
+      padding: 20px;
+      margin: 10px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      height: 350px;
+    }
+
+    .member-image {
+      width: 200px;
+      height: 200px;
+      background-color: #555;
+      border-radius: 60%;
+      margin: 0 auto 15px;
+      box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .8);
+
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+    }
+
+    .socialclass1 {
+      margin-right: 20px;
+    }
+
+    .socialclass2 {
+      background-color: white;
+      height: 30px;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+
+<body bgcolor="#02273b">
+  <img src="logo.png" style="width:150px;height:150px">
+  <div class="search">
+
+    <form action="#">
+      <input type="text" placeholder=" &emsp;Search " name="search">
+
+    </form>
+  </div>
+  <br><br>
+  <marquee style="color:white;font-size:20px;" class="marquee-container">
+    <div class="container1">
+      <p class="green" id='infoo'></p>&emsp;&emsp;&emsp;
+      <p class="green" id="infoo1"></p>&emsp;&emsp;&emsp;
+      <p class="green" id="infoo2"></p>
+      <p class="green" id="infotime"></p>
+    </div>
+  </marquee>
+  <br>
+  </div>
+  <br>
+  <div style="display:flex;width:100%;">
+    &emsp;&emsp;
+    <ul class="ul1">
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#Riskassessment">Risk Assessment</a></li>
+      <li><a href="charts.html.html">Charts</a></li>
+      <li><a href="leaderboard.html">Leader-Board</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="Aboutus.html">Contact</a></li>
+    </ul>
+    <div class="flexing">
+      <div style="display:flex">
+        <div class="member">
+          <div class="member-image">
+            <img src="ANAGHA34.png" height="200px" width="200px" style="border-radius:50%">
+          </div>
+          <h2>Anagha P</h2>
+          <p>FRONT-END DEV</p>
+          <div class="social-icons">
+            <div class="socialclass1">
+              <a href="http://linkedin.com/in/anagha-p-nithyandala-b13ba9288"><img src="linkedin.png" height="30px"></a>
+            </div>
+            <div class="socialclass2">
+              <a href="mailto:"><img src="58485698e0bb315b0f7675a8.png" height="30px"></a>
+            </div>
+          </div>
+        </div>
+        <div class="member">
+          <div class="member-image">
+            <img src="alien.jpg" height="200px" width="200px" style="border-radius:50%">
+          </div>
+          <h2>Prithvi Patil</h2>
+          <p>FRONT-END DEV</p>
+          <div class="social-icons">
+            <div class="socialclass1">
+              <a href="https://www.linkedin.com/in/prathvi-patil-712814249"><img src="linkedin.png" height="30px"></a>
+            </div>
+            <div class="socialclass2">
+              <a href="mailto:prathvipatil104@gmail.com"><img src="58485698e0bb315b0f7675a8.png" height="30px"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex">
+        <div class="member">
+          <div class="member-image">
+            <img src="ujwal image (2).jpg" height="200px" width="200px" style="border-radius:50%">
+          </div>
+          <h2>Ujwal KC</h2>
+          <p>BACK-END DEV</p>
+          <div class="social-icons">
+            <div class="socialclass1">
+              <a href="https://www.linkedin.com/in/ujwal-kc-791441262"><img src="linkedin.png" height="30px"></a>
+            </div>
+            <div class="socialclass2">
+              <a href="mailto:ujwalkcsps@gmail.com"><img src="58485698e0bb315b0f7675a8.png" height="30px"></a>
+            </div>
+          </div>
+        </div>
+        <div class="member">
+          <div class="member-image">
+            <img src="pragna.jpeg" height="200px" width="200px" style="border-radius:50%">
+          </div>
+          <h2>Pragna U Kulkarni</h2>
+          <p>BACK-END DEV</p>
+          <div class="social-icons">
+            <div class="socialclass1">
+              <a href="https://www.linkedin.com/in/pragna-kulkarni-102231243"><img src="linkedin.png" height="30px"></a>
+            </div>
+            <div class="socialclass2">
+              <a href="mailto:pragnauk1@gmail.com"><img src="58485698e0bb315b0f7675a8.png" height="30px"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box3">
+      <div>
+        <hr>
+        <marquee>REGULATORY COMPLIANCE BOARD</marquee>
+        <hr>
+        <div id="news-container" style="padding:10px"></div>
+
+        <script>
+          async function fetchCryptoNews() {
+            const url = 'https://crypto-news16.p.rapidapi.com/news/top/5';
+            const options = {
+              method: 'GET',
+              headers: {
+                'X-RapidAPI-Key': 'b872b00dc0msh5607ff5ced11705p14ce8djsne5acba85745c',
+                'X-RapidAPI-Host': 'crypto-news16.p.rapidapi.com'
+              }
+            };
+
+            try {
+              const response = await fetch(url, options);
+              const result = await response.text();
+              const newsData = JSON.parse(result);
+
+              const newsContainer = document.getElementById('news-container');
+              newsContainer.innerHTML = ''; // Clear any existing content
+
+              newsData.forEach(article => {
+                const articleElement = document.createElement('div');
+                articleElement.innerHTML = `
+                                  <h2>${article.title}</h2>
+                                  <p>${article.description}</p>
+                                  <p>Source: ${article.source}</p>
+                                  <hr>
+                              `;
+                newsContainer.appendChild(articleElement);
+              });
+            } catch (error) {
+              console.error(error);
+            }
+          }
+
+          // Call the fetchCryptoNews function when the page loads
+          window.onload = fetchCryptoNews;
+        </script>
+        <div class="text">
+        </div>
+      </div>
+      <br>
+</body>
+
+</html>
